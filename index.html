@@ -10,15 +10,15 @@
 </head>
 <body>
 
-    <header class="header">
+   <header class="header" id="main-header">
         <div class="header-left">
             <i class="fa-solid fa-bars icon-btn" id="menu-btn"></i>
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="logo">
         </div>
 
-        <div class="header-center">
+        <div class="header-center" id="search-container">
             <div class="search-box">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" id="main-search">
                 <button class="search-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -29,201 +29,140 @@
         </div>
 
         <div class="header-right">
-            <i class="fa-solid fa-magnifying-glass mobile-search-icon"></i>
-    <button type="submit" class="btn">
-        <i class="fa-solid fa-plus"></i> Create
+
+            <i class="fa-solid fa-tower-broadcast mobile-tv-icon"></i>
+                    
+            <div class="create-wrapper">
+    <button type="button" class="create-btn" id="create-btn">
+        <i class="fa-solid fa-plus"></i>
+        <span>Create</span>
     </button>
-    
-    <div class="notification-container">
-        <i class="fa-solid fa-bell icon-btn"></i>
-        <span class="notification-count">9+</span>
-    </div>
-    <div class="user-avatar">A</div>
 </div>
+            
+            <div class="notification-container">
+                <i class="fa-solid fa-bell icon-btn"></i>
+                <span class="notification-count">9+</span>
+            </div>
+            <div class="user-avatar">A</div>
+            <i class="fa-solid fa-magnifying-glass mobile-search-icon"></i>
+        </div>
+        
+        <div class="category-bar" id="category-bar">
+                <button class="cat-explore-btn" id="explore-drawer-trigger">
+            <i class="fa-solid fa-compass"></i>
+        </button>
+               <div class="cat-scroll-wrapper">
+            <button class="cat-item active">All</button>
+            <button class="cat-item">Gaming</button>
+            <button class="cat-item">Music</button>
+            <button class="cat-item">Programming</button>
+            <button class="cat-item">Live</button>
+            <button class="cat-item">Terraria</button>
+            <button class="cat-item">Mixes</button>
+            <button class="cat-item">Linux</button>
+        </div>
+            </div>
+
     </header>
 
     <div class="main-layout">
-        <aside class="sidebar">
-            <div class="nav-section">
-                <div class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></div>
-                <div class="nav-item"><i class="fa-solid fa-bolt"></i><span>Shorts</span></div>
-                <div class="nav-item"><i class="fa-solid fa-layer-group"></i><span>Subscriptions</span></div>
-            </div>
+        <i class="fa-solid fa-bars icon-btn" id="menu-btn"></i>
 
-            
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+<aside class="sidebar-drawer" id="sidebar-drawer">
+    <div class="drawer-header">
+        <i class="fa-solid fa-bars icon-btn" id="close-menu"></i>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Logo" class="logo">
+    </div>
+    <div class="drawer-body">
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="nav-section">
+        <div class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></div>
+        <div class="nav-item"><i class="fa-solid fa-bolt"></i><span>Shorts</span></div>
+        <div class="nav-item"><i class="fa-solid fa-layer-group"></i><span>Subscriptions</span></div>
+    </div>
+    <hr>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="nav-section">
+        <h4 class="section-title">You <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></h4>
+        <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
+        <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
+        <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
+        <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
+    </div>
+    <hr>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="nav-section discover-section" id="discover-section">
+    <h4 class="section-title">Discover</h4>
+    
+    <div class="nav-item"><i class="fa-solid fa-fire"></i><span>Trending</span></div>
+    <div class="nav-item"><i class="fa-solid fa-bag-shopping"></i><span>Shopping</span></div>
+    <div class="nav-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
+    <div class="nav-item"><i class="fa-solid fa-clapperboard"></i><span>Movies</span></div>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="hidden-items" id="hidden-discover">
+        <div class="nav-item"><i class="fa-solid fa-tower-broadcast"></i><span>Live</span></div>
+        <div class="nav-item"><i class="fa-solid fa-gamepad"></i><span>Gaming</span></div>
+        <div class="nav-item"><i class="fa-solid fa-newspaper"></i><span>News</span></div>
+        <div class="nav-item"><i class="fa-solid fa-trophy"></i><span>Sport</span></div>
+        <div class="nav-item"><i class="fa-regular fa-lightbulb"></i><span>Learning</span></div>
+        <div class="nav-item"><i class="fa-solid fa-shirt"></i><span>Fashion & Beauty</span></div>
+    </div>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="nav-item toggle-btn" id="show-more-btn">
+        <i class="fa-solid fa-chevron-down" id="toggle-icon"></i>
+        <span id="toggle-text">Show more</span>
+    </div>
+</div>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="nav-section">
+        <h4 class="section-title">More from YouTube</h4>
+        <div class="nav-item"><i class="fa-solid fa-children" style="color: #ff0000;"></i><span>YouTube Kids</span></div>
+    </div>
+    <hr>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+    <div class="nav-section">
+        <div class="nav-item"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
+        <div class="nav-item"><i class="fa-solid fa-flag"></i><span>Report history</span></div>
+        <div class="nav-item"><i class="fa-solid fa-circle-question"></i><span>Help</span></div>
+        <div class="nav-item"><i class="fa-solid fa-message"></i><span>Send feedback</span></div>
+    </div>
+    
+    <div class="footer-links">
+        <p>About Press Copyright<br>Contact us Creators</p>
+        <p>Advertise Developers</p>
+        <p>© 2026 Google LLC</p>
+    </div>
+    </div>
+</aside>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
+<nav class="mini-sidebar" id="mobile-nav">
+    <div class="mini-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </div>
+    <div class="mini-item">
+        <i class="fa-solid fa-bolt"></i>
+        <span>Shorts</span>
+    </div>
+    
+    <div class="mini-item create-special">
+        <i class="fa-solid fa-circle-plus"></i>
+    </div>
 
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
-
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
-
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
-
-            <hr>
-                        
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-                <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-                <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-                <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-            </div>
-
-            <hr>            
-            <div class="nav-section">
-                <h4 class="section-title">Discover</h4>
-                <div class="nav-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
-                <div class="nav-item"><i class="fa-solid fa-tower-broadcast"></i><span>Live</span></div>
-                <div class="nav-item"><i class="fa-solid fa-gamepad"></i><span>Game</span></div>
-                <div class="nav-item"><i class="fa-solid fa-newspaper"></i><span>News</span></div>
-                <div class="nav-item"><i class="fa-solid fa-trophy"></i><span>Sport</span></div>
-                <div class="nav-item"><i class="fa-regular fa-lightbulb"></i><span>Learning Center</span></div>
-                <div class="nav-item"><i class="fa-solid fa-shirt"></i><span>Fashion and Beauty</span></div>
-            </div>
-
-            <hr>            
-            <div class="nav-section">
-                <h4 class="section-title">You ></h4>
-                <div class="nav-item"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
-                <div class="nav-item"><i class="fa-regular fa-flag"></i><span>Content reporting history</span></div>
-                <div class="nav-item"><i class="fa-regular fa-circle-question"></i><span>Help</span></div>
-                <div class="nav-item"><i class="fa-solid fa-comment-dots"></i><span>Send feedback</span></div>
-            </div>
-        </aside>
+    <div class="mini-item">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Subscriptions</span>
+    </div>
+    <div class="mini-item">
+        <i class="fa-solid fa-user"></i>
+        <span>You</span>
+    </div>
+</nav>
 
         <main class="content">
-            <div class="category-bar">
-                <button class="cat-item active">All</button>
-                <button class="cat-item">Gaming</button>
-                <button class="cat-item">Music</button>
-                <button class="cat-item">Programming</button>
-                <button class="cat-item">Live</button>
-                <button class="cat-item">Terraria</button>
-                <button class="cat-item">Mixes</button>
-                <button class="cat-item">Linux</button>
-            </div>
+            
 
             <section class="video-grid">
                 <div class="video-card">
@@ -312,48 +251,6 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
-                        <span class="video-time">08:45</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:orange">S</div>
-                        <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
                         <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
                         <span class="video-time">15:20</span>
                     </div>
@@ -419,216 +316,6 @@
                             <h3>Reference Counting in C++</h3>
                             <p class="v-author">The Cherno</p>
                             <p class="v-stats">1.2M views  1 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
-                        <span class="video-time">08:45</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:orange">S</div>
-                        <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
-                        <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
-                        <span class="video-time">08:45</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:orange">S</div>
-                        <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
-                        <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
-                        <span class="video-time">08:45</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:orange">S</div>
-                        <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
-                        <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
-                        <span class="video-time">08:45</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:orange">S</div>
-                        <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -718,15 +405,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -760,15 +475,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -802,15 +545,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -844,15 +615,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -886,15 +685,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -928,15 +755,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -970,15 +825,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -1012,15 +895,43 @@
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
-                        <span class="video-time">15:20</span>
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
-                            <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <h3>Why Terraria is still the best 2D game</h3>
+                            <p class="v-author">SoloNoah</p>
+                            <p class="v-stats">450K views  2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
+                        <span class="video-time">10:12</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-text">
+                            <h3>GBB25 Grand Finals (High Quality)</h3>
+                            <p class="v-author">Dlow Beatbox</p>
+                            <p class="v-stats">2.1M views  9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
+                        <span class="video-time">22:05</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-text">
+                            <h3>Modern Web Development with CSS Grid</h3>
+                            <p class="v-author">WebDev Academy</p>
+                            <p class="v-stats">85K views  3 days ago</p>
                         </div>
                     </div>
                 </div>
@@ -1101,7 +1012,6 @@
 </body>
 
 </html>
-
 
 
 
