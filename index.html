@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stil.css">
 </head>
+
 <body>
 
-   <header class="header" id="main-header">
+    <header class="header" id="main-header">
         <div class="header-left">
             <i class="fa-solid fa-bars icon-btn" id="menu-btn"></i>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"
+                class="logo">
         </div>
 
         <div class="header-center" id="search-container">
@@ -31,14 +34,13 @@
         <div class="header-right">
 
             <i class="fa-solid fa-tower-broadcast mobile-tv-icon"></i>
-                    
             <div class="create-wrapper">
-    <button type="button" class="create-btn" id="create-btn">
-        <i class="fa-solid fa-plus"></i>
-        <span>Create</span>
-    </button>
-</div>
-            
+                <button type="button" class="create-btn" id="create-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Create</span>
+                </button>
+            </div>
+
             <div class="notification-container">
                 <i class="fa-solid fa-bell icon-btn"></i>
                 <span class="notification-count">9+</span>
@@ -46,123 +48,170 @@
             <div class="user-avatar">A</div>
             <i class="fa-solid fa-magnifying-glass mobile-search-icon"></i>
         </div>
-        
+
         <div class="category-bar" id="category-bar">
+
+            <div class="cat-scroll-wrapper">
                 <button class="cat-explore-btn" id="explore-drawer-trigger">
-            <i class="fa-solid fa-compass"></i>
-        </button>
-               <div class="cat-scroll-wrapper">
-            <button class="cat-item active">All</button>
-            <button class="cat-item">Gaming</button>
-            <button class="cat-item">Music</button>
-            <button class="cat-item">Programming</button>
-            <button class="cat-item">Live</button>
-            <button class="cat-item">Terraria</button>
-            <button class="cat-item">Mixes</button>
-            <button class="cat-item">Linux</button>
-        </div>
+                    <i class="fa-solid fa-compass"></i>
+                </button>
+                <button class="cat-item active">All</button>
+                <button class="cat-item">Gaming</button>
+                <button class="cat-item">Music</button>
+                <button class="cat-item">Programming</button>
+                <button class="cat-item">Live</button>
+                <button class="cat-item">Terraria</button>
+                <button class="cat-item">Mixes</button>
+                <button class="cat-item">Linux</button>
             </div>
+        </div>
 
     </header>
 
     <div class="main-layout">
         <i class="fa-solid fa-bars icon-btn" id="menu-btn"></i>
 
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-<aside class="sidebar-drawer" id="sidebar-drawer">
-    <div class="drawer-header">
-        <i class="fa-solid fa-bars icon-btn" id="close-menu"></i>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Logo" class="logo">
-    </div>
-    <div class="drawer-body">
+        <aside class="sidebar-drawer" id="sidebar-drawer">
+            <div class="drawer-header">
+                <i class="fa-solid fa-bars icon-btn" id="close-menu"></i>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Logo"
+                    class="logo">
+            </div>
+            <div class="drawer-body">
 
-    <div class="nav-section">
-        <div class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></div>
-        <div class="nav-item"><i class="fa-solid fa-bolt"></i><span>Shorts</span></div>
-        <div class="nav-item"><i class="fa-solid fa-layer-group"></i><span>Subscriptions</span></div>
-    </div>
-    <hr>
+                <div class="nav-section">
+                    <div class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-bolt"></i><span>Shorts</span></div>
+                </div>
+                <hr>
 
-    <div class="nav-section">
-        <h4 class="section-title">You <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></h4>
-        <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></div>
-        <div class="nav-item"><i class="fa-solid fa-list-ul"></i><span>Playlists</span></div>
-        <div class="nav-item"><i class="fa-regular fa-clock"></i><span>Watch later</span></div>
-        <div class="nav-item"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></div>
-    </div>
-    <hr>
 
-    <div class="nav-section discover-section" id="discover-section">
-    <h4 class="section-title">Discover</h4>
-    
-    <div class="nav-item"><i class="fa-solid fa-fire"></i><span>Trending</span></div>
-    <div class="nav-item"><i class="fa-solid fa-bag-shopping"></i><span>Shopping</span></div>
-    <div class="nav-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
-    <div class="nav-item"><i class="fa-solid fa-clapperboard"></i><span>Movies</span></div>
 
-    <div class="hidden-items" id="hidden-discover">
-        <div class="nav-item"><i class="fa-solid fa-tower-broadcast"></i><span>Live</span></div>
-        <div class="nav-item"><i class="fa-solid fa-gamepad"></i><span>Gaming</span></div>
-        <div class="nav-item"><i class="fa-solid fa-newspaper"></i><span>News</span></div>
-        <div class="nav-item"><i class="fa-solid fa-trophy"></i><span>Sport</span></div>
-        <div class="nav-item"><i class="fa-regular fa-lightbulb"></i><span>Learning</span></div>
-        <div class="nav-item"><i class="fa-solid fa-shirt"></i><span>Fashion & Beauty</span></div>
-    </div>
+                <div class="nav-section discover-section" id="discover-section">
+                    <h4 class="section-title">Subscriptions  <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></h4>
 
-    <div class="nav-item toggle-btn" id="show-more-btn">
-        <i class="fa-solid fa-chevron-down" id="toggle-icon"></i>
-        <span id="toggle-text">Show more</span>
-    </div>
-</div>
+                    <div class="nav-item"><div class="sub-profilo" ></div><span>chess24 Turkce</span></div>
+                    <div class="nav-item"><div class="sub-profilo" ></div><span>Kevin Powell</span></div>
+                    <div class="nav-item"><div class="sub-profilo" ></div><span>CrashCourse</span></div>
+                    <div class="nav-item"><div class="sub-profilo" ></div></i><span>Traversy Media</span></div>
+                    <div class="nav-item"><div class="sub-profilo" ></div></i><span>Marques</span></div>
+                    <div class="nav-item"><div class="sub-profilo" ></div></i><span>Programming</span></div>
+                    <div class="nav-item"><div class="sub-profilo" ></div></i><span>TED</span></div>
 
-    <div class="nav-section">
-        <h4 class="section-title">More from YouTube</h4>
-        <div class="nav-item"><i class="fa-solid fa-children" style="color: #ff0000;"></i><span>YouTube Kids</span></div>
-    </div>
-    <hr>
+                    <div class="hidden-items hidden-discover" >
+                    <div class="nav-item"><div class="sub-profilo"></div><span>chess24 Turkce</span></div>
+                    <div class="nav-item"><div class="sub-profilo"></div><span>Kevin Powell</span></div>
+                    <div class="nav-item"><div class="sub-profilo"></div><span>CrashCourse</span></div>
+                    <div class="nav-item"><div class="sub-profilo"></div></i><span>Traversy Media</span></div>
+                    <div class="nav-item"><div class="sub-profilo"></div></i><span>Marques</span></div>
+                    <div class="nav-item"><div class="sub-profilo"></div></i><span>Programming</span></div>
+                    <div class="nav-item"><div class="sub-profilo"></div></i><span>TED</span></div>
+                    </div>
 
-    <div class="nav-section">
-        <div class="nav-item"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
-        <div class="nav-item"><i class="fa-solid fa-flag"></i><span>Report history</span></div>
-        <div class="nav-item"><i class="fa-solid fa-circle-question"></i><span>Help</span></div>
-        <div class="nav-item"><i class="fa-solid fa-message"></i><span>Send feedback</span></div>
-    </div>
-    
-    <div class="footer-links">
-        <p>About Press Copyright<br>Contact us Creators</p>
-        <p>Advertise Developers</p>
-        <p>© 2026 Google LLC</p>
-    </div>
-    </div>
-</aside>
+                    <div class="nav-item toggle-btn show-more-btn">
+                        <i class="fa-solid fa-chevron-down toggle-icon" ></i>
+                        <span class="toggle-text">Show more</span>
+                    </div>
+                </div>
 
-<nav class="mini-sidebar" id="mobile-nav">
-    <div class="mini-item active">
-        <i class="fa-solid fa-house"></i>
-        <span>Home</span>
-    </div>
-    <div class="mini-item">
-        <i class="fa-solid fa-bolt"></i>
-        <span>Shorts</span>
-    </div>
-    
-    <div class="mini-item create-special">
-        <i class="fa-solid fa-circle-plus"></i>
-    </div>
+                <hr>
+                <div class="nav-section discover-section" id="discover-section">
+                    <h4 class="section-title">You  <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></h4>
 
-    <div class="mini-item">
-        <i class="fa-solid fa-layer-group"></i>
-        <span>Subscriptions</span>
-    </div>
-    <div class="mini-item">
-        <i class="fa-solid fa-user"></i>
-        <span>You</span>
-    </div>
-</nav>
+                    <div class="nav-item"><i class="fas fa-history"></i><span>History</span></div>
+                    <div class="nav-item"><i class="fas fa-list-ul"></i><span>Playlists</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-clock"></i><span>Watch later</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-thumbs-up"></i><span>Liked videos</span></div>
+                    <div class="nav-item"><i class="fa-regular fa-circle-down"></i><span>Downlods</span></div>
+
+                    <div class="hidden-items hidden-discover">
+                    <div class="nav-item"><i class="fa-solid fa-scissors"></i><span>Your clips</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-clapperboard"></i><span>Your movies</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-graduation-cap"></i><span>Your courses</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-podcast"></i><span>Your podcasts</span></div>
+                    </div>
+
+                    <div class="nav-item toggle-btn show-more-btn">
+                        <i class="fa-solid fa-chevron-down" id="toggle-icon"></i>
+                        <span class="toggle-text">Show more</span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="nav-section discover-section" id="discover-section">
+                    <h4 class="section-title">Explore  <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i></h4>
+
+                    <div class="nav-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-clapperboard"></i><span>Movies & TV</span></div>
+                    <div class="nav-item"><i class="fas fa-broadcast-tower"></i><span>Live</span></div>
+
+                    <div class="hidden-items" id="hidden-discover">
+                        <div class="nav-item"><i class="fa-solid fa-bag-shopping"></i><span>Shopping</span></div>
+                        <div class="nav-item"><i class="fa-solid fa-gamepad"></i><span>Gaming</span></div>
+                        <div class="nav-item"><i class="fa-solid fa-newspaper"></i><span>News</span></div>
+                        <div class="nav-item"><i class="fa-solid fa-trophy"></i><span>Sport</span></div>
+                        <div class="nav-item"><i class="fa-regular fa-lightbulb"></i><span>Learning</span></div>
+                        <div class="nav-item"><i class="fa-solid fa-shirt"></i><span>Fashion & Beauty</span></div>
+                    </div>
+
+                    <div class="nav-item toggle-btn" id="show-more-btn">
+                        <i class="fa-solid fa-chevron-down" id="toggle-icon"></i>
+                        <span id="toggle-text">Show more</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="nav-section">
+                    <h4 class="section-title">More from YouTube</h4>
+                    <div class="nav-item"><i class="fa-solid fa-children" style="color: #ff0000;"></i><span>YouTube
+                            Kids</span></div>
+                </div>
+                <hr>
+
+                <div class="nav-section">
+                    <div class="nav-item"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-flag"></i><span>Report history</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-circle-question"></i><span>Help</span></div>
+                    <div class="nav-item"><i class="fa-solid fa-message"></i><span>Send feedback</span></div>
+                </div>
+
+                <div class="footer-links">
+                    <p>About Press Copyright<br>Contact us Creators</p>
+                    <p>Advertise Developers</p>
+                    <p>© 2026 Google LLC</p>
+                </div>
+            </div>
+        </aside>
+
+        <nav class="mini-sidebar" id="mobile-nav">
+            <div class="mini-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </div>
+            <div class="mini-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Shorts</span>
+            </div>
+
+            <div class="mini-item create-special">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+
+            <div class="mini-item">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="mini-item">
+                <i class="fa-solid fa-user"></i>
+                <span>You</span>
+            </div>
+        </nav>
 
         <main class="content">
-            
+
 
             <section class="video-grid">
                 <div class="video-card">
@@ -173,9 +222,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -187,9 +239,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -201,37 +256,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -243,9 +273,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -257,9 +290,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -271,37 +307,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -313,9 +324,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -327,9 +341,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -341,37 +358,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -383,9 +375,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -397,9 +392,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -411,37 +409,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -453,9 +426,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -467,9 +443,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -481,37 +460,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -523,9 +477,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -537,9 +494,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -551,37 +511,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -593,9 +528,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -607,9 +545,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -621,37 +562,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -663,9 +579,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -677,9 +596,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -691,37 +613,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -733,9 +630,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -747,9 +647,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -761,37 +664,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -803,9 +681,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -817,9 +698,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -831,37 +715,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -873,9 +732,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -887,9 +749,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -901,37 +766,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
-                        <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
-                    </div>
-                    <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
-                        <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -943,9 +783,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -957,9 +800,12 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Reference Counting in C++</h3>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
                             <p class="v-author">The Cherno</p>
-                            <p class="v-stats">1.2M views  1 month ago</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
@@ -971,50 +817,121 @@
                     <div class="v-info">
                         <div class="v-avatar" style="background:orange">S</div>
                         <div class="v-text">
-                            <h3>Why Terraria is still the best 2D game</h3>
-                            <p class="v-author">SoloNoah</p>
-                            <p class="v-stats">450K views  2 weeks ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node3/360/200" alt="thumb">
-                        <span class="video-time">10:12</span>
+                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
+                        <span class="video-time">15:20</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:green">D</div>
+                        <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>GBB25 Grand Finals (High Quality)</h3>
-                            <p class="v-author">Dlow Beatbox</p>
-                            <p class="v-stats">2.1M views  9 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
                 <div class="video-card">
                     <div class="thumb-container">
-                        <img src="https://picsum.photos/seed/node4/360/200" alt="thumb">
-                        <span class="video-time">22:05</span>
+                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
+                        <span class="video-time">15:20</span>
                     </div>
                     <div class="v-info">
-                        <div class="v-avatar" style="background:blue">P</div>
+                        <div class="v-avatar" style="background:purple">C</div>
                         <div class="v-text">
-                            <h3>Modern Web Development with CSS Grid</h3>
-                            <p class="v-author">WebDev Academy</p>
-                            <p class="v-stats">85K views  3 days ago</p>
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:orange">S</div>
+                        <div class="v-text">
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
+                        <span class="video-time">15:20</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-text">
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node1/360/200" alt="thumb">
+                        <span class="video-time">15:20</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:purple">C</div>
+                        <div class="v-text">
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb-container">
+                        <img src="https://picsum.photos/seed/node2/360/200" alt="thumb">
+                        <span class="video-time">08:45</span>
+                    </div>
+                    <div class="v-info">
+                        <div class="v-avatar" style="background:orange">S</div>
+                        <div class="v-text">
+                            <div class="v-title-container">
+                                <h3>Reference Counting in C++</h3>
+                                <button class="v-menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                            <p class="v-author">The Cherno</p>
+                            <p class="v-stats">1.2M views 1 month ago</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
