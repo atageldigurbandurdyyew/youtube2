@@ -19,7 +19,7 @@ backBtn.addEventListener('click', () => {
 let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 651) {
         header.classList.remove('header-hidden');
         return; 
     }
@@ -106,7 +106,7 @@ window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
 
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 651) {
 
         const isDrawerOpen = sideDrawer.classList.contains('open');
         
@@ -134,7 +134,7 @@ const mobileNav = document.getElementById('mobile-nav');
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 651) {
         if (currentScroll > lastScroll && currentScroll > 50) {
 
             mobileNav.classList.add('nav-hidden');
@@ -148,25 +148,50 @@ window.addEventListener('scroll', () => {
 
 
 
-    const showMoreBtn = document.getElementById('show-more-btn');
-    const hiddenContent = document.getElementById('hidden-discover');
-    const toggleText = document.getElementById('toggle-text');
-    const toggleBtnWrapper = document.getElementById('show-more-btn');
 
-    showMoreBtn.onclick = function() {
-       
+window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    if (window.innerWidth > 651) {
+        if (currentScroll < lastScroll && currentScroll < 50) {
+
+            mobileNav.classList.add('nav-hidden');
+        } else {
+            mobileNav.classList.remove('nav-hidden');
+        }
+    }
+    
+    lastScroll = currentScroll;
+});
+
+
+
+
+
+
+
+
+
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.onclick = function() {
+
+        const parent = this.closest('.nav-section');
+        const hiddenContent = parent.querySelector('.hidden-items');
+        const toggleText = this.querySelector('.toggle-text');
+        const toggleIcon = this.querySelector('.toggle-icon');
+
         hiddenContent.classList.toggle('show');
-        
-       
-        toggleBtnWrapper.classList.toggle('active');
+        this.classList.toggle('active');
 
-       
         if (hiddenContent.classList.contains('show')) {
             toggleText.innerText = "Show less";
+            if(toggleIcon) toggleIcon.style.transform = "rotate(180deg)";
         } else {
             toggleText.innerText = "Show more";
+            if(toggleIcon) toggleIcon.style.transform = "rotate(0deg)";
         }
     };
+});
 
     
 
@@ -188,3 +213,15 @@ window.addEventListener('scroll', () => {
     };
 
     window.addEventListener('resize', adjustLayout);
+
+
+
+    const avatars = document.querySelectorAll('.sub-profilo');
+        
+        const colors = ['#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#00bcd4', '#4caf50', '#ff9800', '#795548'];
+
+        avatars.forEach(avatar => {
+
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            avatar.style.backgroundColor = randomColor;
+        });
